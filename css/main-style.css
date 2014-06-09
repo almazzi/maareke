@@ -2313,9 +2313,9 @@ a {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     width: 263px;
-    border: 2px solid dodgerblue;
+    /*border: 2px solid dodgerblue;
     border-radius: 10%;
-
+*/
 
 }
 .photographer:nth-child(3){
