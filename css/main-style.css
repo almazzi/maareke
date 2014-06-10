@@ -2333,7 +2333,7 @@ text-align: center;
 .portfalio-text{
     
     display: inline-block;
-    border-radius: 10px;
+/*    border-radius: 10px;*/
     border: 1px solid #7ACC29;
     padding: 5px 10px;
 }
@@ -2346,7 +2346,7 @@ text-align: center;
     
     border: 1px solid #7575FF;
     padding: 5px 10px;
-    border-radius: 10px;
+ /*   border-radius: 10px;*/
 }
 .schedule-text:hover{
         background-color: #7575FF;
