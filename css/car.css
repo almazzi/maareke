@@ -21,55 +21,75 @@
     /*border: 1px solid #eb3b46;*/
     display: block;
     background-position: 0 0;
-    background-image: url("../img/cars/first.jpg");
+    background-image: url("../img/cars/first.jpg");}
+.slider{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    margin: 10px auto;
 
 
 }
-.car-layout-img:target{
-    background-position: 300px 0;
-}
-#1:checked~.car-layout-img{
-    background-position: 0 0;
-
-}
-#2:checked~.car-layout-img{
-    background-position: 300px 0;
-}
-
-.rotate{
-    display: inline-block;
-    overflow: hidden;
+.slider li{
+    list-style: none;
     position: absolute;
-    top:256px;
-    right: 0;
-    font-size: 0;
-    border: 3px solid #3B5998;
-    z-index: 10;
-
+}
+.slider input{
+    display: none;
+}
+.slider img{
+width: 300px;
+height: 200px;
+    visibility: hidden;
+    opacity: 0;
 
 }
-.rating-input{
-
-    float: right;
-   /* width: 40px;
-    height: 40px;
-    padding: 0px;*/
-    border-left: 3px solid #eb3b46;
-    /*opacity: 0;*/
-
-
-
-}
-.rating-label{
-
-    float: right;
+.slider label{
+    width: 10px;
+    height: 10px;
     display: block;
-    width: 16px;
-    height: 16px;
-    background: url('../img/star.png') 0 -16px;
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    cursor: pointer;
+ /*   border: 1px solid #000000;*/
+    border-radius: 50%;
+    background-color: blue;
+   /* visibility: hidden;
+    opacity: 0;*/
+    -webkit-transition: .25ms ;
+    -moz-transition: .25ms ;
+    -ms-transition: .25ms ;
+    -o-transition: .25ms ;
+    transition: .25ms ;
+
+
 }
-.rating:hover .rating-star:hover,
-.rating:hover .rating-star:hover~.rating-star,
-.rating-input:checked~.rating-star {
-    background-position: 0 0;
+/*.slider:hover label{
+    visibility: visible;
+    opacity: 1;
+}*/
+.slider input:checked + label{
+    background-color: #8dc63f;
 }
+
+.slider li:nth-child(1) label{
+    left:10px;
+
+}
+.slider li:nth-child(2) label{
+    left:25px;
+
+}.slider li:nth-child(3) label{
+     left:40px;
+
+ }.slider li:nth-child(4) label{
+      left:55px;
+
+  }
+  .slider li input:checked ~img{
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+  }
+
