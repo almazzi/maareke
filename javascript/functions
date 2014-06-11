@@ -1,0 +1,3 @@
+function f_schedule(){
+	document.getElementByClassName('schedule').style.display='block'
+}
