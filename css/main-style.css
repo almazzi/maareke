@@ -1378,6 +1378,7 @@ a {
 .mrk-list {
     width: 790px;
     margin: 0 auto;
+    opacity: 1;
 }
 
 .mrk-list .mrk-main-row {
@@ -2339,6 +2340,8 @@ a {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+
+
 }
 
 
