@@ -9,23 +9,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/icomoon.css">
 
-    <script>
-        function close_schedule(id){
-            document.getElementById(id).style.display="none";
-        }
-        function f_schedule(id){
-            document.getElementById(id).style.display="block";
-
-
-
-            }
-        function op0()
-        {
-
-
-        }
-
-    </script>
 
 
 </head>
@@ -454,7 +437,7 @@
             </span>
             <div class="links">
 
-             <button class="cell-btn border-cg">portfolio</button>
+             <button class="cell-btn border-cg" onclick="alert(myvar)">portfolio</button>
              <button class="cell-btn border-cb" onclick="f_schedule('name1I')">Schedule</button>
 
 
@@ -481,7 +464,7 @@
             </span>
                <div class="links">
 
-                <button class="cell-btn border-cg">portfolio</button>
+                <button class="cell-btn border-cg" onclick="alert(myvar)">portfolio</button>
                 <button class="cell-btn border-cb" onclick="f_schedule('name2I')">schedule</button>
 
 
@@ -576,7 +559,7 @@
             </span>
                 <div class="links">
 
-                    <button class="cell-btn border-cb">schedule</button>
+                    <button class="cell-btn border-cb">portfolio</button>
                     <button class="cell-btn border-cb" onclick="f_schedule('name5I')">schedule</button>
 
 
@@ -669,7 +652,7 @@
             </span>
             <div class="links">
 
-                <button class="cell-btn border-cg">schedule</button>
+                <button class="cell-btn border-cg">portfolio</button>
                 <button class="cell-btn border-cb" onclick="f_schedule('name8I')">schedule></button>
 
 
@@ -847,6 +830,7 @@
 
 </div>
 <!-- End Container Wrapper -->
+<script src="javascript/schedule.js"></script>
 
 </body>
 
